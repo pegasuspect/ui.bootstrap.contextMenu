@@ -26,7 +26,7 @@ Add a reference to `contextMenu.js`. In your app config add `ui.bootstrap.contex
 ```html
 <div>
     <span>you can specify the event on how the menu opens:</span>
-    <div ng-repeat="item in items" context-menu="menuOptions" context-menu-event="click">Left Click: {{item.name}}</div>
+    <div ng-repeat="item in items" context-menu="menuOptions" context-menu-on="click">Left Click: {{item.name}}</div>
 </div>
 <div ng-bind="selected"></div>
 ```

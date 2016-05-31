@@ -288,8 +288,8 @@ angular.module('ui.bootstrap.contextMenu', [])
     };
     return function ($scope, element, attrs) {
         var openMenuEvent = "contextmenu";
-        if(attrs.contextMenuEvent && typeof(attrs.contextMenuEvent) === "string"){
-            openMenuEvent = attrs.contextMenuEvent;
+        if(attrs.contextMenuOn && typeof(attrs.contextMenuOn) === "string"){
+            openMenuEvent = attrs.contextMenuOn;
         }
         element.on(openMenuEvent, function (event) {
             event.stopPropagation();
